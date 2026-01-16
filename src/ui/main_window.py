@@ -25,9 +25,9 @@ from pyqtgraph import PlotWidget
 # 모듈 임포트를 위한 경로 설정
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from data.collector import DataCollector, DataPoint
-from report.pdf_generator import PDFReportGenerator
-from core import CPUMonitor, MemoryMonitor, GPUMonitor, DiskMonitor, NetworkMonitor, SystemInfo
+from src.data.collector import DataCollector, DataPoint
+from src.report.pdf_generator import PDFReportGenerator
+from src.core import CPUMonitor, MemoryMonitor, GPUMonitor, DiskMonitor, NetworkMonitor, SystemInfo
 
 
 class GaugeWidget(QFrame):
